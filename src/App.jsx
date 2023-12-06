@@ -8,6 +8,7 @@ import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
 import Tours from './pages/Tours';
 import Tour from './pages/Tour';
+import Error from './pages/Error';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="tours" element={<Tours />} />
             <Route path="tour/:id" element={<Tour />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="*" element={<Error />} />
           </Route>
         </Routes>
       </DelayedImage>
